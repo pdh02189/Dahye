@@ -101,4 +101,12 @@ $(document).ready(function(){
     $(".mobile_menu").on("click", function(){
         $(".mobile_gnb").toggleClass("on");
     });
+
+    // 프로젝트 자세히보기
+    $(".btn_detail").on("click", function(){
+        $(this).closest("li").find(".project_modal").fadeIn(200);
+    });
+    $(".modal_close").on("click", function(){
+        $(this).closest("li").find(".project_modal").fadeOut(200);
+    });
 });

@@ -8,8 +8,12 @@
     <link href="//cdn.jsdelivr.net/gh/snz-hayden/toolo/fonts/black_han_sans/black_han_sans.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.css" integrity="sha512-n5zPz6LZB0QV1eraRj4OOxRbsV7a12eAGfFcrJ4bBFxxAwwYDp542z5M0w24tKPEhKk2QzjjIpR5hpOjJtGGoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -224,7 +228,91 @@
                     <div class="comm_tit_txt" style="color:#fff;border-bottom-color:#ccc">PROJECTS</div>
                 </div>
                 <ul class="project_list">
-                    <li>오늘뭐먹지?</li>
+                    <li>
+                        <div class="project_tit">식물타이쿤(PlantTycoon)</div>
+                        <div class="project_period">
+                            2024.05 ~ 2024.06
+                            <span>(3인 팀 프로젝트)</span>
+                        </div>
+                        <div class="project_info">
+                            <div class="project_img">
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                      <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <img src="images/로그인.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/메인.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/로그인.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                  
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                  </div>
+                            </div>
+                            <div class="project_des">
+                                <div class="project_txt1">
+                                    식물타이쿤은 <b>현대인들을 위한 스마트 반려식물 육성 서비스</b>입니다. 1인 가구가 늘어가는 지금, 반려식물을 통해 공허함을 해소하고자 하는 아이디어에 착안하여 개발하였습니다.
+                                    <p></p>
+                                    이 프로젝트를 통해 <span class="font_red">Java 11</span>과 <span class="font_red">Spring Framework</span>를 심도 있게 공부하고 활용할 수 있었습니다. 또한, <span class="font_red">Mybatis</span>를 사용한 SQL Mapper와 <span class="font_red">Oracle</span> 데이터베이스를 통해 데이터 관리를 구현하였습니다.
+                                    <p></p>
+                                    프론트엔드 부분에서는 <span class="font_red">HTML5</span>, <span class="font_red">CSS3</span>, <span class="font_red">jQuery</span>, <span class="font_red">JavaScript</span>를 사용하여 사용자 인터페이스를 개발하였고, Arduino와의 연동을 통해 식물의 상태를 모니터링하고 관리할 수 있는 기능을 구현하였습니다.
+                                    <p></p>
+                                    개발 과정에서 <span class="font_red">STS</span>, <span class="font_red">Arduino IDE</span>, <span class="font_red">Android Studio</span>, <span class="font_red">Visual Studio Code</span>와 같은 다양한 IDE를 사용하였고, <span class="font_red">Notion</span>을 통해 아이디어 회의와 프로젝트 관리도 함께 진행하였습니다.
+                                    <p></p>
+                                    식물타이쿤을 개발하며 다양한 기술 스택과 도구를 활용할 수 있었을 뿐 아니라, IT 기술을 통해 실제 생활에 유용한 솔루션을 제공하는 프로젝트를 완성할 수 있었습니다.
+                                    <p></p>
+                                    <div class="btn_detail">자세히 보기&nbsp;&nbsp;&nbsp;→</div>
+                                </div>
+                                <div class="project_txt2">
+                                    <div class="project_txt2_1">주요 기능</div>
+                                    <div class="project_txt2_2">실시간 온도/대기습도/조도/토양습도 모니터링 및 시각화, 자동/수동 급수 관리 및 조명 제어, 시각화된 데이터를 통한 식물 건강 상태 파악 및 맞춤형 관리 가이드 제공</div>
+                                </div>
+                                <div class="project_txt2">
+                                    <div class="project_txt2_1">GitHub</div>
+                                    <div class="project_txt2_2">
+                                        <a href="https://github.com/Erosaddy/PlantTycoon">github.com/Erosaddy/PlantTycoon</a>
+                                    </div>
+                                </div>
+                                <div class="project_txt2">
+                                    <div class="project_txt2_1">Frontend</div>
+                                    <div class="project_txt2_2">HTML5, CSS3, jQuery, JavaScript</div>
+                                </div>
+                                <div class="project_txt2">
+                                    <div class="project_txt2_1">Backend</div>
+                                    <div class="project_txt2_2">Java, Spring, Arduino</div>
+                                </div>
+                                <div class="project_txt2">
+                                    <div class="project_txt2_1">Database</div>
+                                    <div class="project_txt2_2">Oracle</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal">
+                            <div class="modal_head">
+                                README.md
+                                <div class="modal_close">닫기</div>
+                            </div>
+                            <div class="modal_body">
+                                <div class="modal_body_inner">
+                                    <div class="markdown-body">
+                                        <md-block src="./planttycoon.md">
+                                            <!-- README.md 로드 실패시 보이는 문구 -->
+                                            `README.md` was *not* found
+                                        </md-block>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li>식물타이쿤</li>
                 </ul>
             </div>
@@ -276,5 +364,17 @@
             </div>
         </footer>
     </div>
+    <script>
+        var swiper = new Swiper(".swiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
