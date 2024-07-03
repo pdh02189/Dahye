@@ -91,7 +91,10 @@ header.on .header_inner .gnb li a:hover{color: #f4983a;}
 .project_info{display: flex;display: -ms-flexbox;flex-flow: row wrap;justify-content: center;-webkit-box-pack: center;-ms-flex-pack: center;}
 .project_img{overflow: hidden;position: relative;width: 50%;margin-right: 3rem;}
 .swiper{width: 100%;}
+.swiper-button-next{right: 0 !important;}
+.swiper-button-prev{left: 0 !important;}
 .swiper-button-next, .swiper-button-prev{color: #f4983a !important;}
+.swiper-button-next::after, .swiper-button-prev::after{font-size: 2rem !important;}
 .swiper-slide img{width: 100%;}
 .swiper-pagination,
 .swiper-pagination span{font-size: .9rem; color: #6c757d !important;}
