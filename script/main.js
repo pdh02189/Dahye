@@ -13,6 +13,25 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
+    // 미디어 쿼리 조건
+    const mediaQuery = window.matchMedia('(min-width: 1000px)');
+
+    // 미디어 쿼리 조건에 따라 클래스 추가/제거 함수
+    function handleMediaQueryChange(event) {
+        const $header = $('header');
+        if (event.matches) {
+            $header.removeClass('on');
+        } else {
+            $header.addClass('on');
+        }
+    }
+
+    // 페이지 로드 시 미디어 쿼리 조건 체크
+    handleMediaQueryChange(mediaQuery);
+
+    // 미디어 쿼리 조건이 변경될 때마다 함수 실행
+    mediaQuery.addListener(handleMediaQueryChange);
+
     $(".pageup, .logo").on("click",function(){
         $('html, body').animate({
             scrollTop : 0
