@@ -97,9 +97,14 @@ $(document).ready(function(){
         return scrollToSection(heights.visual + heights.aboutme + heights.skills + heights.certificate + heights.projects - heights.header);
     });
 
-    // 모바일 메뉴
-    $(".mobile_menu").on("click", function(){
-        $(".mobile_gnb").toggleClass("on");
+    // 모바일 메뉴 아이콘 클릭 시 메뉴 토글
+    $('.mobile_menu').click(function() {
+        $('.mobile_gnb').toggleClass('on');
+    });
+
+    // 모바일 메뉴 항목 클릭 시 메뉴 닫기
+    $('.mobile_gnb li a').click(function() {
+        $('.mobile_gnb').removeClass('on');
     });
 
     // 프로젝트 자세히보기
