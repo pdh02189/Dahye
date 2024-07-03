@@ -96,4 +96,9 @@ $(document).ready(function(){
         const heights = getHeights();
         return scrollToSection(heights.visual + heights.aboutme + heights.skills + heights.certificate + heights.projects - heights.header);
     });
+
+    // 모바일 메뉴
+    $(".mobile_menu").on("click", function(){
+        $(".mobile_gnb").toggleClass("on");
+    });
 });

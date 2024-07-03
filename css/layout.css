@@ -18,6 +18,8 @@ header{position: fixed;top: 0;right: 0;left: 0;background-color: transparent;z-i
 .header_inner .logo{display: inline-block;font-weight: 700;font-size: 1.5rem;color: hsla(0, 0%, 100%, .7);line-height: 2rem;cursor: pointer;transition: all .2s;}
 .header_inner .logo:hover{color: #fff;}
 .header_inner .gnb{margin-left: auto; display: flex; flex-wrap: wrap; align-items: center;}
+.header_inner .mobile_menu,
+.header_inner .mobile_gnb{display: none;}
 .header_inner .gnb li{position: relative;}
 .header_inner .gnb li a{display: inline-block;padding: 0 1rem;font-weight: 700;font-size: 1rem;color: hsla(0, 0%, 100%, .7);line-height: 2rem;cursor: pointer;transition: all .2s;}
 .header_inner .gnb li a:hover{color: #fff;}
@@ -45,7 +47,7 @@ header.on .header_inner .gnb li a:hover{color: #f4983a;}
 .info{display: flex;display: -ms-flexbox;flex-flow: row wrap;justify-content: space-between;-webkit-box-pack: justify;-ms-flex-pack: justify;}
 .info li{width: calc(100%/3);}
 .info li:nth-child(-n + 3){margin-bottom: 2rem;}
-.info_inner{display: flex;display: -ms-flexbox;flex-flow: row nowrap;align-items: center;width: 100%;max-width: 14rem;margin: 0 auto;opacity: .8;}
+.info_inner{display: flex;display: -ms-flexbox;flex-flow: row nowrap;align-items: center;width: 100%;max-width: 15rem;margin: 0 auto;opacity: .8;}
 .info_inner .img{width: 2rem;min-width: 2rem;height: 2rem;margin-right: 2rem;}
 .info_inner .img img{width: 100%;}
 .info_inner .txt{display: flex; flex-direction: column;}
@@ -110,10 +112,21 @@ footer .copy{font-weight: 400;font-size: .9rem;color: #f5f5f5;}
 @media (max-width: 1000px){
     .comm_tit_txt{font-size: 2.5rem;}
 
+    .header_inner .gnb{display: none;}
+    .header_inner .mobile_menu{display: block;margin-left: auto;box-sizing: border-box;-webkit-box-sizing: border-box;width: 3.5rem;height: 3rem;padding: .5rem 0;margin-top: -.5rem;border: 1px solid rgba(0, 0, 0, .1);border-radius: .25rem;text-align: center;cursor: pointer;}
+    .header_inner .mobile_gnb{display: block;position: absolute; top: 72px;left: 0;right: 0; overflow: hidden;box-sizing: border-box;-webkit-box-sizing: border-box;max-height: 0;padding-left: 2rem;background-color: #fff;transition: max-height .2s ease;-webkit-transition: max-height .2s ease;-o-transition: max-height .2s ease;box-shadow: 0 4px .3rem hsla(0, 0%, 85%, .8);}
+    .header_inner .mobile_gnb.on{max-height:15.75rem;}
+    .header_inner .mobile_gnb li{position: relative;}
+    .header_inner .mobile_gnb li:first-child{margin-top: 1rem;}
+    .header_inner .mobile_gnb li:last-child{margin-bottom: 1rem;}
+    .header_inner .mobile_gnb li a{display: table;padding: .75rem 0;font-weight: 700;font-size: 1rem;color: #6c757d;line-height: 1.25rem;cursor: pointer;transition: all .2s;}
+    .header_inner .mobile_gnb li a:hover{color: #f4983a;}
+
     .visual_tit{font-size: 3rem;}
     .visual_des{font-size: 1rem;}
 
     .info li{width: 50%;}
+    .info li:nth-child(-n + 4){margin-bottom: 2rem;}
 
     .certificate_list li{width: 100%;max-width: 30rem;}
     .certificate_list li:nth-child(2){margin-top: 2rem;}
@@ -122,6 +135,40 @@ footer .copy{font-weight: 400;font-size: .9rem;color: #f5f5f5;}
     .career_img{padding-right: 2rem;}
     .career_img .career_img_inner{width: 10rem;height: 10rem;}
     .career_txt{padding-left: 2rem;}
+}
+
+
+
+/* 미디어쿼리 780 */
+@media (max-width: 780px){
+    .skill_info li{width: 14.5rem;}
+    .skill_info li:nth-child(2){margin-left: 2rem;}
+    .skill_info li .skill_tit{font-size: 1.25rem;}
+
+    .career_info{width: 100%;}
+    .career_info_inner{flex-direction: column;}
+    .career_img{padding-right: 0;padding-bottom: 2rem;border-right: none;}
+    .career_img .career_img_inner{width: 15rem;height: 15rem;margin: 0 auto;}
+    .career_txt{padding-left: 0;}
+}
+
+
+/* 미디어쿼리 580 */
+@media (max-width: 580px){
+    .comm_tit_txt{font-size: 2rem;}
+
+    .info li{width: 100%;}
+    .info li:nth-child(-n + 5){margin-bottom: 2rem;}
+    .info_inner .img{margin-right: 3rem;}
+
+    .skill_info li{width: 18rem;}
+    .skill_info li:nth-child(2){margin-left: auto;}
+    .skill_info li .skill_tit{font-size: 1.5rem;}
+
+    .certificate_list li{padding: 1.5rem;}
+    .certificate_list li h3{font-size: 1.25rem;}
+
+    .career_img .career_img_inner{width: 12.5rem;height: 12.5rem;}
 }
 
 
